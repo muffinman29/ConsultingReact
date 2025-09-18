@@ -7,7 +7,7 @@ function Footer() {
           <a href="about">Learn More About Us</a>
         </div>
         <div className="text-center mt-4">
-          <p>&copy; 2025 Gulf Coast Tech Consulting</p>
+          <p>&copy; 2025 ACME Tech Consulting</p>
           <p>
             Follow us on
             <a
