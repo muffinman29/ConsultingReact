@@ -10,24 +10,27 @@ import ComputerServices from "./pages/ComputerServices";
 import TechnologyConsulting from "./pages/TechnologyConsulting";
 import Footer from "./components/Footer";
 
+function RouteCollection() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="computer-services" element={<ComputerServices />} />
+      <Route path="technology-consulting" element={<TechnologyConsulting />} />
+      <Route path="welcome" element={<Home />} />
+    </Routes>
+  );
+}
+
 function App() {
   //const [count, setCount] = useState(0)
 
   return (
     <>
       <Container>
-        <Header />        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="computer-services" element={<ComputerServices />} />
-          <Route
-            path="technology-consulting"
-            element={<TechnologyConsulting />}
-          />
-          <Route path="welcome" element={<Home />} />
-        </Routes>
+        <Header />
+        <RouteCollection />
         <Footer />
       </Container>
     </>
